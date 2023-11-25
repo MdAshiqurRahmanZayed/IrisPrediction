@@ -27,6 +27,7 @@ function predictIris() {
                let text  = document.createElement('h3');
                text.innerHTML = `Predicted Class: <b>${result.result}</b>`;
                console.log(text);
+               document.getElementById('result').innerHTML = '';
                document.getElementById('result').appendChild(text);
           })
           .catch(error => {
